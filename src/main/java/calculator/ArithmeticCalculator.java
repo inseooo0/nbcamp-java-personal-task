@@ -3,14 +3,14 @@ package calculator;
 import java.util.ArrayList;
 import java.util.Optional;
 
-public class ArithmeticCalculator extends Calculator<Integer>{
+public class ArithmeticCalculator extends Calculator<Double>{
 
     public ArithmeticCalculator() {
         super();
         resultList = new ArrayList<>();
     }
 
-    public int calculate(int num1, int num2, char operator) throws Exception {
+    public double calculate(double num1, double num2, char operator) throws Exception {
         Optional<OperatorType> operatorType = OperatorType.of(operator);
 
         if (operatorType.isEmpty()) {

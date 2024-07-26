@@ -17,18 +17,17 @@ public class App {
                 case 1:
 
                     System.out.print("첫 번째 숫자를 입력하세요: ");
-                    int num1 = sc.nextInt();
+                    double num1 = sc.nextDouble();
                     System.out.print("두 번째 숫자를 입력하세요: ");
-                    int num2 = sc.nextInt();
+                    double num2 = sc.nextDouble();
 
                     System.out.print("사칙연산 기호를 입력하세요: ");
                     char operator = sc.next().charAt(0);
 
-                    int result = arithmeticCalculator.calculate(num1, num2, operator);
+                    double result = arithmeticCalculator.calculate(num1, num2, operator);
                     System.out.println("결과: " + result);
 
-                    List<Integer> resultList = arithmeticCalculator.getResultList();
-                    resultList.add(result);
+                    arithmeticCalculator.getResultList().add(result);
                     System.out.println("가장 먼저 저장된 연산 결과를 삭제하시겠습니까? (remove 입력 시 삭제)");
                     if (sc.next().equals("remove")) {
                         arithmeticCalculator.removeResult();
