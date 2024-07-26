@@ -46,7 +46,12 @@ public class App {
             if (sc.next().equals("remove")) {
                 resultList.removeFirst();
             }
-
+            System.out.println("저장된 연산결과를 조회하시겠습니까? (inquiry 입력 시 조회)");
+            if (sc.next().equals("inquiry")) {
+                for (Integer i : resultList) {
+                    System.out.println("지난 연산 결과= " + i);
+                }
+            }
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
 
         } while (!sc.next().equals("exit"));
