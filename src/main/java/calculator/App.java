@@ -24,10 +24,10 @@ public class App {
                     System.out.print("사칙연산 기호를 입력하세요: ");
                     char operator = sc.next().charAt(0);
 
-                    double result = arithmeticCalculator.calculate(num1, num2, operator);
+                    int result = arithmeticCalculator.calculate(num1, num2, operator);
                     System.out.println("결과: " + result);
 
-                    List<Double> resultList = arithmeticCalculator.getResultList();
+                    List<Integer> resultList = arithmeticCalculator.getResultList();
                     resultList.add(result);
                     System.out.println("가장 먼저 저장된 연산 결과를 삭제하시겠습니까? (remove 입력 시 삭제)");
                     if (sc.next().equals("remove")) {

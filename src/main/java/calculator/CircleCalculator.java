@@ -2,7 +2,7 @@ package calculator;
 
 import java.util.ArrayList;
 
-public class CircleCalculator extends Calculator{
+public class CircleCalculator extends Calculator<Double>{
 
     public CircleCalculator() {
         super();
