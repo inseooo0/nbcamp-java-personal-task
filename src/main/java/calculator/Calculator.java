@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Calculator {
 
-    public List<Integer> resultList = new ArrayList<>();
+    private List<Integer> resultList = new ArrayList<>();
 
     public int calculate(int num1, int num2, char operator) throws Exception {
         switch (operator) {
@@ -24,5 +24,13 @@ public class Calculator {
             default:
                 throw new RuntimeException("잘못된 연산자 기호입니다.");
         }
+    }
+
+    public List<Integer> getResultList() {
+        return resultList;
+    }
+
+    public void setResultList(List<Integer> resultList) {
+        this.resultList = resultList;
     }
 }
