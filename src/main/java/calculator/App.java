@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class App {
 
     public static void main(String[] args) {
+        int[] resultArray = new int[10];
+        int index = -1;
+
         Scanner sc = new Scanner(System.in);
 
         do {
@@ -36,6 +39,7 @@ public class App {
                     break;
             }
             System.out.println("결과: " + result);
+            resultArray[++index] = result;
 
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
 
