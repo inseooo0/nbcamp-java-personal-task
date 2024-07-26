@@ -33,4 +33,8 @@ public class Calculator {
     public void setResultList(List<Integer> resultList) {
         this.resultList = resultList;
     }
+
+    public void removeResult() {
+        resultList.removeFirst();
+    }
 }
