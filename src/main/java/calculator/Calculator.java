@@ -37,4 +37,10 @@ public class Calculator {
     public void removeResult() {
         resultList.removeFirst();
     }
+
+    public void inquiryResults() {
+        for (Integer i : resultList) {
+            System.out.println("지난 연산 결과 = " + i);
+        }
+    }
 }
