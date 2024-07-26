@@ -23,4 +23,9 @@ public class ArithmeticCalculator extends Calculator<Double>{
     public void removeResult() {
         resultList.removeFirst();
     }
+
+    public void printLargerResult(double n) {
+        resultList.stream().filter(i -> i > n)
+                .forEach(i -> System.out.println("조회 결과 = " + i));
+    }
 }

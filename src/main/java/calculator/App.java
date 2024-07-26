@@ -36,6 +36,13 @@ public class App {
                     if (sc.next().equals("inquiry")) {
                         arithmeticCalculator.inquiryResults();
                     }
+                    System.out.println("저장된 연산결과 중 입력한 값보다 큰 결과를 조회하시겠습니까? (inquiry 입력 시 조회)");
+                    if (sc.next().equals("inquiry")) {
+                        System.out.print("조회 조건 숫자를 입력하세요: ");
+                        double num = sc.nextDouble();
+                        arithmeticCalculator.printLargerResult(num);
+                    }
+
                     break;
                 case 2:
 
