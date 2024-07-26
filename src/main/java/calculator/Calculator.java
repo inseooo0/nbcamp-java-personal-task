@@ -5,7 +5,11 @@ import java.util.List;
 
 public class Calculator {
 
-    private List<Integer> resultList = new ArrayList<>();
+    private List<Integer> resultList;
+
+    public Calculator() {
+        resultList = new ArrayList<>();
+    }
 
     public int calculate(int num1, int num2, char operator) throws Exception {
         switch (operator) {
